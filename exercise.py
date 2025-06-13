@@ -17,13 +17,24 @@
 # print(slices)
 
 
-word = input('Enter a word: ')
-print(word.strip(' '))
-word = word.replace(' ', '')
-if word == word[::-1]:
-    print(f'The word {word} is a palindrome.')
-else:
-    print(f'The word {word} is not a palindrome.')
+# word = input('Enter a word: ')
+# print(word.strip(' '))
+# word = word.replace(' ', '')
+# if word == word[::-1]:
+#     print(f'The word {word} is a palindrome.')
+# else:
+#     print(f'The word {word} is not a palindrome.')
 
 
 
+# Sum of even and odd numbers from a string
+numbers = '78,12,34,32,45,67,1, and 89'.replace(' and ', '').split(',')
+even_sum  = 0
+odd_sum = 0
+for num  in numbers:
+    if int(num) % 2 == 0:
+        even_sum += int(num)
+    else:
+        odd_sum += int(num)
+print(f'The sum of even numbers is {even_sum}')
+print(f'The sum of odd numbers is {odd_sum}')
