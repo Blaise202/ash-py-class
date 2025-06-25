@@ -40,10 +40,23 @@
 # print(f'The sum of odd numbers is {odd_sum}')
 
 
-students = "Jeffrey, Afia, Lily, James, Dogbey, Emmanuel, Kofi, Janet, Phoeby and Adwoa"
-students_list = students.replace(' and ', ', ').split(', ')
-teams = []
-for i in range(0,int(len(students_list)),2):
- teams.append(f'{students_list[i]} and {students_list[i+1]}')
-for team in teams:
- print(team)
+# students = "Jeffrey, Afia, Lily, James, Dogbey, Emmanuel, Kofi, Janet, Phoeby and Adwoa"
+# students_list = students.replace(' and ', ', ').split(', ')
+# teams = []
+# for i in range(0,int(len(students_list)),2):
+#  teams.append(f'{students_list[i]} and {students_list[i+1]}')
+# for team in teams:
+#  print(team)
+
+try:
+ start = int(input('Start: '))
+ difference = int(input('Difference: '))
+ terms = int(input('Terms: '))
+except ValueError:
+ print('Invalid input')
+result = f'{start}'
+value = start
+for i in range(terms - 1):
+ value += difference
+ result = f'{result} {value}'
+print(result)
