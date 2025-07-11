@@ -13,12 +13,12 @@ new_item = input("Enter the other item: ")
 shopping_list.insert(1, new_item) #1
 essentials = ['bread', 'rice', 'eggs', 'Milk', 'Honey'] #2
 shopping_list.extend(essentials) 
-print(shopping_list);
-search = input('Search for the item: ')
+print(shopping_list)
+search = input('Search for the item: ') #3
 try:
   shopping_list.remove(search)
   print(f'{search} was removed from your shopping list')
 except:
   print(f'{search} is not in your shopping list')
-print(shopping_list);
+print(shopping_list)
 
