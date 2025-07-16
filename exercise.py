@@ -48,15 +48,25 @@
 # for team in teams:
 #  print(team)
 
-try:
- start = int(input('Start: '))
- difference = int(input('Difference: '))
- terms = int(input('Terms: '))
-except ValueError:
- print('Invalid input')
-result = f'{start}'
-value = start
-for i in range(terms - 1):
- value += difference
- result = f'{result} {value}'
-print(result)
+# try:
+#  start = int(input('Start: '))
+#  difference = int(input('Difference: '))
+#  terms = int(input('Terms: '))
+# except ValueError:
+#  print('Invalid input')
+# result = f'{start}'
+# value = start
+# for i in range(terms - 1):
+#  value += difference
+#  result = f'{result} {value}'
+# print(result)
+
+
+# def add(a, y = None):
+#   y.append(a)
+#   return y
+# # print(add(1))
+# print(add(1, [1,4,3]))
+
+names = ['Blaise', 'Lyse', 'Fida', 'Rydwan', 'Remy', 'Kojo', 'Aaron']
+print([i for i in names if i[0].lower() in ['a','e', 'i', 'o', 'u']])

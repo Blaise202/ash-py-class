@@ -1,7 +1,7 @@
 def is_shopping_list_empty(shopping_list): #a
-    if len(shopping_list) > 0:
+    if len(shopping_list) == 0:
         return True
-    return True
+    return False
 
 
 def add_item(item, shopping_list): #b
@@ -38,7 +38,8 @@ def delete_print_item(index, shopping_list):#f
     if is_shopping_list_empty(shopping_list):
         return 'The shopping list is empty'
     try:
-        shopping_list.pop(index)
+        item = shopping_list.pop(index)
+        print(f'The deleted item is {item}.')
     except IndexError:
         return 'the index is not in the range'
     return shopping_list
@@ -73,4 +74,4 @@ def total_items(shopping_list):
 
 
 shopping_list = ['bread', 'rice', 'eggs', 'Milk', 'Honey'] 
-print(add_item('butter ',shopping_list))
+print(delete_print_item(1, shopping_list))
