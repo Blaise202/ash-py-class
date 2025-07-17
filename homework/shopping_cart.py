@@ -48,9 +48,10 @@ def delete_print_item(index, shopping_list):#f
 def sub_shopping_list(start_index, end_index, shopping_list): #g
     if is_shopping_list_empty(shopping_list):
         print('The shopping list is empty')
-    x = len(shopping_list[start_index:end_index])
-    new_list = shopping_list[start_index:end_index]
-    print(f"The sub-list from index {start_index} to {end_index-1} has: {x} and they are {new_list}")
+    else:
+        x = len(shopping_list[start_index:end_index])
+        new_list = shopping_list[start_index:end_index]
+        print(f"The sub-list from index {start_index} to {end_index-1} has: {x} items and they are {new_list}")
 
 def print_shopping_list_items(shopping_list): #h
     if is_shopping_list_empty(shopping_list):
@@ -71,7 +72,3 @@ def insert_item(index, item, shopping_list):
 
 def total_items(shopping_list):
     return len(shopping_list)
-
-
-shopping_list = ['bread', 'rice', 'eggs', 'Milk', 'Honey'] 
-print(delete_print_item(1, shopping_list))
