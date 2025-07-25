@@ -1,12 +1,4 @@
-contacts = {
-    "Blaise": [
-        "123-456-7890",
-        "blaise@ex.com",
-        "kigali"
-    ],
-    "Lyse": [
-        "987-654-3210",
-        "lyse@ex.com",
-        "bujumbura"
-    ]
-}
+# qustion 7
+# the error is that add() is not a method for dictionaries
+grades = {"kojo": 75, "Esi":88}
+grades["Yaw"] = 90
