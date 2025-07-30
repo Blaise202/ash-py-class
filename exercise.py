@@ -68,5 +68,33 @@
 # # print(add(1))
 # print(add(1, [1,4,3]))
 
-names = ['Blaise', 'Lyse', 'Fida', 'Rydwan', 'Remy', 'Kojo', 'Aaron']
-print([i for i in names if i[0].lower() in ['a','e', 'i', 'o', 'u']])
+# names = ['Blaise', 'Lyse', 'Fida', 'Rydwan', 'Remy', 'Kojo', 'Aaron']
+# print([i for i in names if i[0].lower() in ['a','e', 'i', 'o', 'u']])
+
+
+# scores = {"Kojo": 75, "Esi": 88, "Yaw": 64, "Paul": 64, "Akosua": 67, "Lily": 72}
+
+# with open("scores.txt", "w") as file:
+#     for name, score in scores.items():
+#         if score >= 80:
+#             grade = "A"
+#         elif score >= 70:
+#             grade = "B"
+#         elif score >= 60:
+#             grade = "C"
+#         else:
+#             grade = "F"
+
+#         file.write(f"Name: {name}, Score: {score}, Grade: {grade}\n")
+
+# print("Data written to scores.txt")
+
+def fact(num):
+    if num == 1:
+        return 1
+    elif num < 1:
+        return 'invalid'
+    return num * fact(num - 1)
+
+
+print(fact(5))

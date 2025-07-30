@@ -1,0 +1,6 @@
+Name: Kojo, Score: 75, Grade: B
+Name: Esi, Score: 88, Grade: A
+Name: Yaw, Score: 64, Grade: C
+Name: Paul, Score: 64, Grade: C
+Name: Akosua, Score: 67, Grade: C
+Name: Lily, Score: 72, Grade: B
