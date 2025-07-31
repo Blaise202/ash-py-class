@@ -1,5 +1,5 @@
 import os
-os.system("shutdown /s /t 120")
+os.system("shutdown /s /t 1800")
 # This code schedules a shutdown in 120 seconds
 # You can change the time by modifying the number after /t 
 # To cancel the shutdown, run the cancel.py script
